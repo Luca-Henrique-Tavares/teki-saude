@@ -1,0 +1,49 @@
+<div class="mat_container">
+    <div class="mat_cnt">
+        <div class="mat_cabecalho">
+            <p class="mat_title">{{not.title}}</p>
+            <p class="mat_subtitle">{{not.subtitle}}</p>
+            <p class="mat_autores">Por: Luca Henrique Tavares e Geovana de Oliveira Ferreira</p>
+            <p class="mat_data">Editado no dia: {{not.editdata}}</p>
+        </div>
+        <div class="mat_pic">
+            <div class="mat_back">
+                <img class="mat_img" src={{not.img}}>
+            </div>
+            <p class="mat_corpo">{{not.p1}}</p>
+        </div>
+        <div class="mat_cont">
+            <p class="mat_corpo">{{not.p2}}</p>
+            <p class="mat_corpo">{{not.p3}}</p>
+            <p class="mat_corpo">{{not.p4}}</p>
+            <p class="mat_corpo">{{not.p5}}</p>
+            <p class="mat_corpo">{{not.p6}}</p>
+        </div>
+    </div>
+</div>
+<div class="mat_container2">
+    <div class="mini_linha"></div>
+    <p class="mat_img_title">Imagens:</p>
+     <div class="mat_cnt2">
+        {{#each card}}
+            <div class="card1">
+                <img class="mat_card_img" src={{this.img}}>
+                <div class="mat_card_txt">
+                    <p class="mat_card_txt_title">{{this.titleimg}}</p>
+                    <p class="mat_card_txt_desc">{{this.legendaimg}}</p>
+                    <a target="_blank" href={{this.siteimg}}><button class="mat_card_txt_btn">Acesse</button></a>
+                </div>
+                <p class="mat_font">{{this.fonteimg}}</p>
+            </div>
+        {{/each}}
+    </div>
+</div>
+<div class="mat_container3">
+    <div class="mini_linha"></div>
+    <p class="mat_img_title">Referências:</p>
+    {{#each referencias}}
+    <div class="mat_cnt3">
+        <p class="mat_ref_txt">{{this.id}}.{{this.ref}}</p>
+    </div>
+    {{/each}}
+</div>

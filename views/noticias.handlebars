@@ -1,0 +1,51 @@
+<div class="not_container">
+    <div class="not_content">
+        <div class="not_text">
+            <p class="not_title">Notícias</p>
+            <p class="not_desc">Confira abaixo as seções populares, novidades e nosso arquivo completo!</p>
+        </div>
+        <div class="not_imgum">
+            <img class="not_firstimg" src="/img/esteto-op-1.png">
+        </div>
+    </div>
+</div>
+<div class="not_container2">
+    <div class="not_linha"></div>
+    <p class="not_subtitle">Populares</p>
+    <div class="not_espaco">
+        <div class="not_not">
+            {{#each result}}
+                    <div class="not_first">
+                        <a href="/padrao/{{this.id}}"><button dataAttribute={{this.id}} id="visualizar" class="not_1"><img class="not_img" src={{this.image}}></button></a>
+                        <a href="/padrao/{{this.id}}"><p class="not_legenda">{{this.title}}</p></a>
+                    </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<div class="not_container2">
+    <div class="not_linha"></div>
+    <p class="not_subtitle">Novidades</p>
+    <div class="not_espaco">
+        <div class="not_not">
+            {{#each rows}}
+                    <div class="not_first">
+                        <a href="/padrao/{{this.id}}"><button dataAttribute={{this.id}} id="visualizar" class="not_1"><img class="not_img" src={{this.image}}></button></a>
+                        <a href="/padrao/{{this.id}}"><p class="not_legenda">{{this.title}}</p></a>
+                    </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="not_container3">
+    <div class="not_linha"></div>
+       <p class="not_subtitle">Todas as notícias</p>
+        <div class="not_divide">
+            <div class="not_div_top">
+            <p class="not_sub">Clique no botão abaixo e acesse todas as notícias!</p>
+            <a href="/noticias/todas"><button class="home_btn">Todas as notícias</button></a>
+            </div>
+            <img class="not_news_img" src="/img/homem-do-jornal.png">
+        </div>
+</div>

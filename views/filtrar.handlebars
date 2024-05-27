@@ -1,0 +1,38 @@
+
+<div class="filtrar_container">
+    <form action="/filtrar/pesquisar" method="post">
+    <div class="filtrar_cnt">
+        <p class="filtrar_title">Pesquise aqui:</p>
+        <div class="filtrar_sep">
+            <img src="/img/seringa-op-2.png" class="filtrar_img">
+            <div class="filtar_pesq">
+                <input type="text" placeholder="Digite aqui" class="filtrar_plc" name="pesquisar" id="pesquisar">
+                <button class="filtrar_btn">Pesquisar</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="resultado_cnt">
+        <p class="resultado_rs">Resultados:</p>
+            <div class="not_espaco">
+                <div class="not_not">
+                    {{#each noticias}}
+                    <div class="not_first">
+                        <a href="/padrao/{{this.id}}"><div dataAttribute={{this.id}} id="visualizar" class="not_1"><img class="not_img" src={{this.image}}></div></a>
+                        <a href="/padrao/{{this.id}}"><p class="not_legenda">{{this.title}}</p></a>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+    </div>
+</form>
+
+<script>
+        document.querySelectorAll('#visualizar').forEach(function(button) {
+        document.querySelector('.resultado_rs').style.display='block';
+        button.addEventListener('click', function() {
+        var newsId = this.parentElement.getAttribute('dataAttribute');
+        window.location.href = "/padrao/" + newsId;
+        });
+        });
+</script>

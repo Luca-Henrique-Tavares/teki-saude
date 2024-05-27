@@ -1,0 +1,17 @@
+<div class="tdsnot_container">
+        <div class="tdsnot_cnt">
+            <p class="tdsnot_title">Todas as Notícias</p>
+        </div>
+</div>
+<div class="tdsnot_ocont">
+        <div class="not_espaco">
+            <div class="not_not">
+                {{#each noticias}}
+                <div class="not_first">
+                    <a href="/padrao/{{this.id}}"><button dataAttribute={{this.id}} viewsAttribute={{this.views}} id="visualizar" class="not_1"><img class="not_img" src={{this.image}}></button></a>
+                    <a href="/padrao/{{this.id}}"><p class="not_legenda">{{this.title}}</p></a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+</div> 
