@@ -1818,7 +1818,7 @@ li{
     }
     .ul-nav{
         gap: 0.8rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-align:left;
         margin-left: 0%;
     }
@@ -1869,11 +1869,13 @@ li{
 
     .home_container2{
         background: #AFEEFF;
-        height: 28rem;
+        height: 22rem;
     }
 
     .home_about{
         margin-top: 20%;
+        margin-left: 5%;
+        margin-right: 0%;
     }
     
     .mini_linha{
@@ -1882,25 +1884,25 @@ li{
     }
 
     .about{
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         font-weight: bold;
     }
     
     .second_img_home{
-        width: 9rem;
-        height: 9rem;
+        width: 7rem;
+        height: 7rem;
     }
     
     .about_desc{
-        font-size: 0.8rem;
+        font-size: 0.65rem;
     }
     
     .about_title{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .home_container3{
-        height: 28rem;
+        height: 22rem;
         background: linear-gradient(180deg, #AFEEFF 0%, #58C3E0 100%);
     }
 
@@ -1909,7 +1911,7 @@ li{
     }
 
     .third_img_home{
-        width: 9rem;
+        width: 10rem;
         height: 12rem;
     }
     
@@ -1918,23 +1920,23 @@ li{
     }
     
     .btn_gmail{
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
     }
     
     .btn_outlook{
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
     }
     
     .gmail{
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
     }
     
     .outlook{
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
     }
 
     .rodape{
@@ -2046,12 +2048,13 @@ li{
         height: 15rem;
     }
     .not_news_img{
-        width: 320px;
-        height: 320px;
+        width: 250px;
+        height: 250px;
     }
     .not_divide{
         flex-direction: column;
         margin-left: 5%;
+        margin-right: 5%;
     }
     /* Todas as notícias */
     .tdsnot_container{
