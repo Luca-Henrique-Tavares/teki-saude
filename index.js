@@ -16,6 +16,10 @@ app.use(express.urlencoded({ extended: true, }));
 app.use(express.json());
 app.use(serveStatic(path.join(__dirname, 'public'))); 
 
+app.get('/sitemap.xml',function(req,res){
+  res.sendFile(path.join(__dirname,'sitemap.xml')); // Linka o sitemap que é uma espécie de lista a qual o robo olha a prioridade das páginas. Deve ser atualizado toda vez que tiver uma nova página
+});
+
 app.get('/',function(req,res){
     res.render('home');
 });
