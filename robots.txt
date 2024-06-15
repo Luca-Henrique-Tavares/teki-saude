@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /admin/*
-Sitemap: https://tekisaude.com.br/sitemap.xml
+Sitemap: https://www.tekisaude.com.br/sitemap.xml
